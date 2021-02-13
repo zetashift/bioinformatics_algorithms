@@ -1,0 +1,14 @@
+* Bioinformatics Algorithms
+
+My collection of literate org files going through [[https://www.bioinformaticsalgorithms.org/][Bioinformatics Algorithms]].
+The course makes you through a wonderful world of biology and computer science. I've chosen [[https://nim-lang.org/][Nim]] as
+the programming language to implement the exercises in the book with. I use [[https://orgmode.org/][Org Mode]] and [[https://github.com/hlissner/doom-emacs][Doom-Emacs]] as the way to take notes
+and show interactive examples. I have supplied markdown files to check out my work too in an more universal format, using [[https://pandoc.org/][pandoc]].
+
+To run the shell script to convert the org files to markdown run this command
+
+#+begin_src
+to_markdown.sh
+#+end_src
+
+To get this running in Emacs, you have to install Nim and org-babel's Nim plugin and [[https://github.com/OrgTangle/ntangle][nTangle]].
