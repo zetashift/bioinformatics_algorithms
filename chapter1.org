@@ -232,3 +232,15 @@ echo findClumps(sampleGenome, 5, 75, 4)
 But even with this it's hard to find /ori/ in /E.coli/.
 
 * The simplest way to replicate DNA
+
+Let's discuss the replication process. Complementary DNA strands run in opposite directions, starting at ori. The strands unwind, creating
+two *replication forks*, these *replication forks* extends all the way to the end, called *replication terminus*, also called /ter/. The *replication terminus* is roughly located opposite from the /ori/.
+DNA polymerase does NOT wait for the parent strands to completely unwind before starting the copying process. It starts copying while the strands are unraveling.
+DNA polymerase does not a *primer*, a short complementary segment that binds to the parent strand and tells the DNA polymerase to start. The replication starts by adding nucleotides, beginning with the primer and proceeding around the chromosome from /ori/ to /ter/. DNA polymerase is *unidirectional*. They only move in 3' -> 5' direction.
+
+** Unidirectionality
+
+This unidirectionality means we need to revise our model of replication. If we walk along DNA connecting /ori/ to /ter/ then we'll see four different half-strands of parent DNA connecting /ori/ to /ter/.
+These four half-strands consist of:
+- *two forward half-strands* in 5' -> 3' direction
+- *two reverse half-strands* in 3' -> 5' direction
