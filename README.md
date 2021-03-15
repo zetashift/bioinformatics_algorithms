@@ -1,4 +1,5 @@
-# Bioinformatics Algorithms
+Bioinformatics Algorithms
+=========================
 
 My collection of literate org files going through [Bioinformatics
 Algorithms](https://www.bioinformaticsalgorithms.org/). The course makes
@@ -17,4 +18,4 @@ command
     to_markdown.sh
 
 To get this running in Emacs, you have to install Nim and org-babel\'s
-Nim plugin.
+Nim plugin and [nTangle](https://github.com/OrgTangle/ntangle).
