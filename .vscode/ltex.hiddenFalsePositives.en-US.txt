@@ -1,1 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCan we conclude that ATGATCAAG/CTTGATCAT also represents a DnaA box in other bacterial genomes?\\E$"}
