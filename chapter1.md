@@ -270,15 +270,15 @@ complementary segment that binds to the parent strand and tells the DNA
 polymerase to start. The replication starts by adding nucleotides,
 beginning with the primer and proceeding around the chromosome from
 *ori* to *ter*. DNA polymerase is **unidirectional**. They only move in
-3\' -\> 5\' direction.
+3' -> 5' direction.
 
 ## Unidirectionality
 
 
 This unidirectionality means we need to revise our model of replication.
-If we walk along DNA connecting *ori* to *ter* then we\'ll see four
+If we walk along DNA connecting *ori* to *ter* then we'll see four
 different half-strands of parent DNA connecting *ori* to *ter*. These
 four half-strands consist of:
 
--   **two forward half-strands** in 5\' -\> 3\' direction
--   **two reverse half-strands** in 3\' -\> 5\' direction
+- **two forward half-strands** in 5' -> 3' direction
+- **two reverse half-strands** in 3' -> 5' direction
