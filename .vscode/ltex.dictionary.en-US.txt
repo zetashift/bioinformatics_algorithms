@@ -1,0 +1,9 @@
+unidirectionality
+ter
+ter
+ori
+k-mer
+k-mers
+Vibrio
+cholerae
+DnaA

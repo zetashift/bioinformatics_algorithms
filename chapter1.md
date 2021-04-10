@@ -1,6 +1,6 @@
 # Genome replication
 
-Before a cell can divide, it must first replicate it\'s genome so that
+Before a cell can divide, it must first replicate it's genome so that
 each of the two daughter cells can inherit it\'s own copy. A high-level
 overview would be that two DNA strands unwind and each strand act as a
 template for copying. At the end you have two pairs of complementary
@@ -24,9 +24,9 @@ design a computational approach to finding *ori*?
 
 # Hidden Messages in replication origin
 
-Here we will be using *Vibrio cholerae*, a bacteria that causes cholera
+Here we will be using *Vibrio cholerae*, bacteria that causes cholera
 as an example of how to find the *ori*. We already know the *ori*, but
-let\'s see what makes the region special, so we can design a
+let's see what makes the region special, so we can design a
 computational approach for finding ori in other bacteria.
 
 Here is *Vibrio cholerae*\'s replication origin:
@@ -55,13 +55,13 @@ don\'t know what it looks like in advance?
 `Input`: A string *Text* `Output`: A hidden message in *Text*
 
 Sadly, this is still not a clearly stated **computational** problem. A
-\"hidden message\" is not defined precisely.
+“hidden message” is not defined precisely.
 
 # Counting words
 
 
 We can try to decipher the message in *ori* by trying to find any
-surprisingly frequent \"words\". For various biological processes,
+surprisingly frequent “words”. For various biological processes,
 certain nucleotide strings often appear surprisingly in various
 biological processes. This is often because certain proteins can only
 bind to DNA if a specific string of nucleotides is present, and if there
@@ -192,7 +192,7 @@ assert reverseComplement("AAAACCCGGT") == "ACCGGGTTTT"
 Running this algorithm on *Vibrio cholerae\'s ori* we get
 `ATGATCAAG (or CTTGATCAT)` as a pattern that might be a hidden message.
 
-We should first check if there aren\'t anymore multiple occurrences of
+We should first check if there aren't any more multiple occurrences of
 these patterns in other regions. A pattern matching problem: `Input`:
 Strings *Pattern* and *Genome* `Output`: All starting positions in
 *Genome* where *Pattern* appears as a substring.
@@ -224,7 +224,7 @@ We will slide a window of fixed length `L` along the genome, looking for
 regions where the k-mer appears several times in short succession. For
 current use we will use `L = 500`, this reflects the typical length of
 *ori* in bacterial genomes. Given integers `L` and `t`, a k-mer
-*Pattern* forms an `(L, t)-clump` inside Genome if there in an interval
+*Pattern* forms a `(L, t)-clump` inside Genome if they're in an interval
 of Genome of length `L` in which this k-mer appears at least *t* times.
 This brings us to the following problem, the clump finding problem.
 `Input`: A string *Genome*, integers *k*, *L* and *t*. `Output`: All
@@ -232,7 +232,7 @@ distinct k-mers forming `(L, t)-clumps` in *Genome*.
 
 We can re-use the `FrequencyTable` function for this. `FrequencyTable`
 will produce a frequency table for a given window of a string of length
-*L*. We need to check if there any string keys in the table whose values
+*L*. We need to check if there are any string keys in the table whose values
 are equal to *t*. These keys that are not present in any other window of
 *Text* will be added to the output.
 
@@ -262,7 +262,7 @@ Let\'s discuss the replication process. Complementary DNA strands run in
 opposite directions, starting at ori. The strands unwind, creating two
 **replication forks**, these **replication forks** extends all the way
 to the end, called **replication terminus**, also called *ter*. The
-**replication terminus** is roughly located opposite from the *ori*. DNA
+**replication terminus** is roughly located opposite to *ori*. DNA
 polymerase does NOT wait for the parent strands to completely unwind
 before starting the copying process. It starts copying while the strands
 are unraveling. DNA polymerase does not a **primer**, a short
